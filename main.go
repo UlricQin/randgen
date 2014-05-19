@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 	"github.com/ulricqin/goutils/filetool"
+	"github.com/ulricqin/randgen/g"
 	"math/rand"
 	"os"
 	"path/filepath"
-	"randgen/g"
 	"sort"
 	"strconv"
 	"strings"
