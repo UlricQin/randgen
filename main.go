@@ -10,6 +10,7 @@ import (
 	"sort"
 	"strconv"
 	"strings"
+	"time"
 )
 
 func main() {
@@ -77,7 +78,7 @@ func generate() {
 
 	for i := 0; i < g.DiCnt; i++ {
 		filename := fmt.Sprintf("%04d.txt", i)
-		if e := genOneFile(filename, int64(i)); e != nil {
+		if e := genOneFile(filename, int64(i)+time.Now().UnixNano()); e != nil {
 			fmt.Printf("genOneFile fail. error: %s", e)
 			break
 		}
