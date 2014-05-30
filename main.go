@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"os"
 	"path/filepath"
-	"sort"
+	// "sort"
 	"strconv"
 	"strings"
 	"time"
@@ -114,7 +114,7 @@ func genOneFile(filename string, seed int64) (err error) {
 		j++
 	}
 
-	sort.Ints(keys)
+	// sort.Ints(keys)
 
 	nums := make([]string, size)
 	for k := 0; k < size; k++ {
